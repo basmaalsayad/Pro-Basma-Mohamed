@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basma Mohamed Alsayad | Profile</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+<header class="bar">
+  <a href="#" class="logo" aria-label="Basma profile home">Basma ✦</a>
+  <nav aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="controls">
+    <div class="swatches" role="group" aria-label="Choose a color palette">
+      <button type="button" data-theme="blush" class="sw blush" aria-label="Blush theme" aria-pressed="true" title="Blush"></button>
+      <button type="button" data-theme="lavender" class="sw lavender" aria-label="Lavender theme" aria-pressed="false" title="Lavender"></button>
+      <button type="button" data-theme="sage" class="sw sage" aria-label="Sage theme" aria-pressed="false" title="Sage"></button>
+    </div>
+    <button type="button" id="nightToggle" class="mode-btn" aria-label="Toggle night mode" title="Night mode">
+      <span class="mode-icon" aria-hidden="true">🌙</span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <div class="mirror">
+      <div class="oval">
+        <img src="photo.jpg" alt="Basma Mohamed Alsayad - Mirror selfie in an oval mirror">
+      </div>
+      <span class="star s1" aria-hidden="true">✦</span>
+      <span class="star s2" aria-hidden="true">✧</span>
+      <span class="star s3" aria-hidden="true">✦</span>
+    </div>
+    <div class="intro">
+      <p class="script">Hello, I'm</p>
+      <h1>Basma<br>Mohamed<br>Alsayad</h1>
+      <p class="idline">Student ID <strong>225108242</strong></p>
+      <p class="role">Computer Science · Faculty of Computers</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Say hi ♡</a>
+        <a class="btn btn-outline" href="#projects">View Projects ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="arch">
+    <h2>About me</h2>
+    <p>I am a Computer Science student at the Faculty of Computers. I love learning new technologies, writing clean code, and turning creative ideas into pretty, functional digital experiences. This page is my Task 1 for Field Training I (FT-WEB-101), crafted with semantic HTML, modern responsive CSS, and dynamic vanilla JavaScript.</p>
+  </section>
+
+  <section id="skills" class="arch">
+    <h2>Skills &amp; Expertise</h2>
+    <div id="ribbons"></div>
+  </section>
+
+  <section id="education" class="arch">
+    <h2>Education &amp; Training</h2>
+    <div class="two">
+      <div class="mini">
+        <span class="icon">✿</span>
+        <h3>Bachelor of Computer Science</h3>
+        <p>Faculty of Computers · In Progress</p>
+        <span class="badge">Major: Computer Science</span>
+      </div>
+      <div class="mini">
+        <span class="icon">✿</span>
+        <h3>Field Training I (FT-WEB-101)</h3>
+        <p>Web Development Track · Task 1: Profile Page</p>
+        <span class="badge">HTML5 · CSS3 · ES6+ JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="wide">
+    <div class="head">
+      <h2>Featured Projects</h2>
+      <div class="gallery-nav">
+        <button class="round" id="left" type="button" aria-label="Scroll left">‹</button>
+        <button class="round" id="right" type="button" aria-label="Scroll right">›</button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery" tabindex="0" aria-label="Projects gallery"></div>
+  </section>
+
+  <section id="contact" class="arch note">
+    <h2>Write me a note</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" autocomplete="name" placeholder="Your name">
+        <small class="err" id="nameErr"></small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="email" placeholder="your.email@example.com">
+        <small class="err" id="emailErr"></small>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Leave a kind message or note..."></textarea>
+        <small class="err" id="msgErr"></small>
+      </div>
+      <button class="btn" type="submit">Send Note ✦</button>
+      <div id="formMsg" role="status" aria-live="polite"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>Designed &amp; Developed with ♡ by <strong>Basma Mohamed Alsayad</strong></p>
+    <p class="sub">Student ID: 225108242 · FT-WEB-101 · Task 1 · <span id="year"></span></p>
+  </footer>
+</main>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
